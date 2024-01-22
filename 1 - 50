@@ -1,0 +1,20 @@
+Задание: 1 (Serge I: 2002-09-30)
+Найдите номер модели, скорость и размер жесткого диска для всех ПК стоимостью менее 500 дол. Вывести: model, speed и hd
+
+SELECT model, speed, hd
+FROM PC
+WHERE price < 500
+
+Задание: 2 (Serge I: 2002-09-21)
+Найдите производителей принтеров. Вывести: maker
+
+SELECT DISTINCT Maker
+FROM Product
+WHERE type = 'Printer'
+
+Задание: 3 (Serge I: 2002-09-30)
+Найдите номер модели, объем памяти и размеры экранов ПК-блокнотов, цена которых превышает 1000 дол.
+
+SELECT DISTINCT model, ram, screen
+FROM Laptop
+WHERE price > 1000
